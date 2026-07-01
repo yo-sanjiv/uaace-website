@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Agentic AI Library</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f5f7fa; }
+
+/* HEADER */
+.header {
+background: white;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.logo { font-size: 24px; font-weight: bold; color: #2563eb; }
+.nav a {
+margin-left: 30px;
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+.nav a:hover { color: #2563eb; }
+
+/* HOMEPAGE */
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: linear-gradient(135deg, #2563eb, #7c3aed);
+color: white;
+}
+.hero h1 { font-size: 48px; margin-bottom: 20px; }
+.hero p { font-size: 20px; margin-bottom: 30px; opacity: 0.9; }
+.btn {
+background: white;
+color: #2563eb;
+padding: 15px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+margin: 0 10px;
+}
+.btn:hover { transform: scale(1.05); }
+
+/* CARDS */
+.cards {
+display: flex;
+justify-content: center;
+gap: 30px;
+padding: 60px 40px;
+max-width: 1200px;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+.card {
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+width: 300px;
+text-align: center;
+}
+.card h3 { color: #2563eb; margin-bottom: 10px; }
+.card p { color: #666; margin-bottom: 20px; }
+.card .btn-small {
+background: #2563eb;
+color: white;
+padding: 10px 25px;
+border-radius: 20px;
+text-decoration: none;
+display: inline-block;
+}
+
+/* SECTIONS */
+.two-col {
+display: flex;
+justify-content: center;
+gap: 40px;
+padding: 60px 40px;
+max-width: 1000px;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+.col {
+background: white;
+padding: 40px;
+border-radius: 15px;
+flex: 1;
+min-width: 250px;
+text-align: center;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.col h2 { margin-bottom: 15px; }
+.col .btn-small { background: #7c3aed; }
+
+/* FOOTER */
+.footer {
+background: #1a1a2e;
+color: white;
+padding: 40px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 30px;
+}
+.footer h4 { margin-bottom: 15px; }
+.footer a {
+color: #aaa;
+text-decoration: none;
+display: block;
+margin: 8px 0;
+}
+.footer a:hover { color: white; }
+.badge {
+background: #2563eb;
+padding: 5px 15px;
+border-radius: 20px;
+display: inline-block;
+font-size: 12px;
+margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+.header { flex-direction: column; gap: 15px; }
+.nav a { margin: 0 15px; }
+.hero h1 { font-size: 32px; }
+.cards { flex-direction: column; align-items: center; }
+.two-col { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+<div class="logo">🤖 Agentic AI Library</div>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="solutions.html">Solutions</a>
+<a href="learners.html">Learners</a>
+<a href="creators.html">Creators</a>
+</div>
+</div>
+
+<!-- HOMEPAGE CONTENT -->
+<div class="hero">
+<h1>Your Agentic AI Library</h1>
+<p>AI tools that actually work - try free mini-courses</p>
+<a href="#" class="btn">Browse Solutions</a>
+<a href="#" class="btn">Start Learning</a>
+</div>
+
+<!-- SOLUTION CARDS -->
+<div class="cards">
+<div class="card">
+<h3>📚 AI Research Helper</h3>
+<p>Summarizes 100-page papers in 2 minutes</p>
+<a href="#" class="btn-small">View Solution</a>
+</div>
+<div class="card">
+<h3>✍️ Content Writer AI</h3>
+<p>Write blog posts and articles in seconds</p>
+<a href="#" class="btn-small">View Solution</a>
+</div>
+<div class="card">
+<h3>🧠 Study Partner AI</h3>
+<p>Quiz yourself and learn faster with AI</p>
+<a href="#" class="btn-small">View Solution</a>
+</div>
+</div>
+
+<!-- LEARNERS & CREATORS -->
+<div class="two-col">
+<div class="col">
+<h2>📚 For Learners</h2>
+<p>Learn with AI-powered study tools</p>
+<a href="#" class="btn-small">Browse Paths →</a>
+</div>
+<div class="col">
+<h2>✍️ For Creators</h2>
+<p>Create content 10x faster with AI</p>
+<a href="#" class="btn-small">Browse Paths →</a>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<div>
+<h3>🤖 Agentic AI Library</h3>
+<div class="badge">Built with Google Cloud</div>
+<div class="badge" style="background:#7c3aed;">Powered by Anthropic</div>
+</div>
+<div>
+<h4>Quick Links</h4>
+<a href="#">Solutions</a>
+<a href="#">Learners</a>
+<a href="#">Creators</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+<div>
+<h4>Connect</h4>
+<a href="#">Twitter</a>
+<a href="#">LinkedIn</a>
+<a href="#">Email</a>
+</div>
+</div>
+
+</body>
+</html>
